@@ -12,32 +12,50 @@ public class Main {
         System.out.println("_");
 
         System.out.println("Task 2");
-        System.out.println(Arrays.toString(array));
-        System.out.print(Arrays.toString(array1));
-        System.out.println("_");
-        System.out.print(Arrays.toString(array2));
+        for (int i = 0; i < array.length; i++) {
+            if (i != array.length - 1) {
+                System.out.print(array[i] + " ,");
+            } else {
+                System.out.print(array[i]);
+                System.out.println(" ");
+                for (i = 0; i < array1.length; i++) {
+                    if (i != array1.length - 1) {
+                        System.out.print(array1[i] + " ,");
+                    } else {
+                        System.out.print(array1[i]);
+                        System.out.println(" ");
+                        for (i = 0; i < array2.length; i++) {
+                            if (i != array2.length - 1) {
+                                System.out.print(array2[i] + " ,");
+                            } else {
+                                System.out.print(array2[i]);
+                                System.out.println(" ");
+                                System.out.println("Task 3");
+                                for (int index = 2; index >= 0; index--) {
+                                    System.out.print(array[index] + ",");
+                                }
+                                System.out.println(" ");
+                                for (int index2 = 2; index2 >= 0; index2--) {
+                                    System.out.print(array1[index2] + " ");
+                                }
 
-        System.out.println(" ");
-        System.out.println("Task 3");
-        for (int index = 2; index >= 0; index--) {
-            System.out.print(array[index] + ",");
+                                System.out.println(" ");
+                                System.out.println("Task 4");
+                                array[0] += 1;
+                                array[1] += 1;
+                                array[2] += 1;
+                                System.out.println(Arrays.toString(array));
+
+
+                            }
+
+
+                        }
+                    }
+                }
+            }
         }
-        System.out.println(" ");
-        for (int index2 = 2; index2 >= 0; index2--) {
-            System.out.print(array1[index2] + " ");
-        }
-
-        System.out.println(" ");
-        System.out.println("Task 4");
-        array[0] += 1;
-        array[1] += 1;
-        array[2] += 1;
-        System.out.println(Arrays.toString(array));
-
-
     }
-
-
 }
 
 
