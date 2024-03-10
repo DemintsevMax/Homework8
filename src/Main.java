@@ -66,6 +66,13 @@ public class Main {
             }
         }
         System.out.println("Task 4");
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0) {
+                array[i] += 1;
+            }
+                    System.out.print(array[i] + ", ");
 
-    }
-}
+                }
+
+            }
+        }
